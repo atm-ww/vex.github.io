@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FiveM 技術人員 | V</title>
+    <meta name="description" content="專注 FiveM 的修 Bug、插件客製與效能調校，將構想轉為穩定可維護的資源。">
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader" role="status" aria-live="polite">
+        <div class="preloader-content">
+            <img src="https://i.ibb.co/SDG6x73P/Adobe-Express-file.png" alt="Vex Studio Logo" class="preloader-logo">
+            <div class="progress-bar-container">
+                <div id="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+            </div>
+            <p class="status-text">正在載入...</p>
+            <button id="skip-loader">跳過</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" style="visibility: hidden;">
+        <header>
+            <a href="#hero" class="logo-link">
+                <img src="https://i.ibb.co/SDG6x73P/Adobe-Express-file.png" alt="Vex Studio Logo" class="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#about">關於</a></li>
+                    <li><a href="#services">服務</a></li>
+                    <li><a href="#stack">技術棧</a></li>
+                    <li><a href="#process">流程</a></li>
+                    <li><a href="#projects">作品</a></li>
+                    <li><a href="#contact">聯絡</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="hero">
+                <div class="hero-content">
+                    <h1>FiveM 技術 × 插件客製</h1>
+                    <p>修 Bug、寫功能、提效能、搭端</p>
+                    <ul>
+                        <li>快速修復伺服器/資源 Bug</li>
+                        <li>針對性優化，解決延遲與資源占用</li>
+                        <li>新功能與插件定制開發</li>
+                        <li>整合第三方 API/Webhook</li>
+                        <li>提供完整文件與移交流程</li>
+                    </ul>
+                    <a href="#contact" class="cta-primary">委託洽詢</a>
+                    <a href="#projects" class="cta-secondary">查看作品</a>
+                </div>
+            </section>
+
+            <section id="about">
+                <h2>關於我</h2>
+                <p>專注於 FiveM 平台的技術人員，擅長將複雜的需求轉化為穩定、高效且可維護的遊戲資源。我熟悉 FiveM 資源結構、客戶端與伺服器端邏輯，並具備豐富的除錯與程式碼重構經驗。</p>
+                <p>我的方法論是「資源化思維」，將每個功能模組化，確保低耦合、高內聚，便於未來擴展與維護。無論是從零開發新功能，還是接手既有的遺留代碼，我都能快速進入狀況，提供最適合的解決方案。</p>
+                <p>關鍵工具與框架：</p>
+                <ul>
+                    <li>Lua / JavaScript (ES6+)</li>
+                    <li>QBCore / QBox/ NDcore 系列框架</li>
+                    <li>ox_lib / qb-core</li>
+                    <li>資料庫 (MySQL / oxmysql)</li>
+                    <li>版本控制 (Git)</li>
+                </ul>
+            </section>
+
+            <section id="services">
+                <h2>服務項目</h2>
+                <div class="service-grid">
+                    <div class="service-item">
+                        <h3>Bug 修復</h3>
+                        <p>快速定位並修復 FiveM 伺服器或特定資源的錯誤，從簡單的腳本衝突到複雜的事件風暴，恢復伺服器穩定性。</p>
+                        <p><strong>可交付內容：</strong> 修復後的資源文件、問題分析報告、預防建議。</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>性能優化</h3>
+                        <p>分析伺服器延遲、客戶端卡頓、資源占用過高等問題，提供針對性優化方案，提升整體流暢度。</p>
+                        <p><strong>可交付內容：</strong> 優化後的程式碼、性能對比數據（如 resmon）、優化報告。</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>客製插件</h3>
+                        <p>根據您的需求，從零開始開發全新的 FiveM 插件或功能，例如獨特的職業、活動系統或管理工具。</p>
+                        <p><strong>可交付內容：</strong> 完整資源包、配置文件、使用說明文件。</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>框架整合</h3>
+                        <p>協助整合 QBCore, QBox, NDcore 等主流框架，確保資源間的兼容性與協同工作。</p>
+                        <p><strong>可交付內容：</strong> 整合後的資源、衝突解決方案、框架配置建議。</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>UI/前端介面</h3>
+                        <p>使用現代前端技術（或 ox_lib）打造美觀、易用的遊戲內介面（NUI）。</p>
+                        <p><strong>可交付內容：</strong> UI 資源文件 (HTML/CSS/JS)、與 Lua 的互動邏輯。</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Webhook/API 整合</h3>
+                        <p>將您的 FiveM 伺服器與 Discord、網站後台或其他第三方服務對接，實現數據同步或自動化通知。</p>
+                        <p><strong>可交付內容：</strong> 整合程式碼、API 使用範例、安全設定建議。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="stack">
+                <h2>技術棧</h2>
+                <p>我主要使用以下技術來打造高效能的 FiveM 資源：</p>
+                <ul>
+                    <li><strong>語言：</strong> Lua 5.4, JavaScript (ES6+)</li>
+                    <li><strong>FiveM 核心：</strong> fxmanifest (Cfx.re), 事件/回呼 (Events/Callbacks), 狀態管理 (State Bags), 距離廣播 (RageUI/NativeUI)</li>
+                    <li><strong>框架：</strong> QBCore, QBox, NDcore, ox_inventory, ox_lib, oxmysql</li>
+                    <li><strong>前端：</strong> HTML5, CSS3, JavaScript, (可選 React/Vue)</li>
+                    <li><strong>工具：</strong> Git, VS Code, 資料庫管理工具</li>
+                </ul>
+                <p>我遵循良好的程式碼品質原則，包括註解清晰、版本控制、以及在交付前進行內部測試，確保程式碼的可讀性與長期可維護性。</p>
+            </section>
+
+            <section id="process">
+                <h2>合作流程</h2>
+                <ol>
+                    <li><strong>需求澄清：</strong> 我們會先詳細討論您的想法與目標，確認需求的範圍與可行性。</li>
+                    <li><strong>估時與報價：</strong> 根據需求的複雜度，我會提供詳細的開發時程估算與報價。</li>
+                    <li><strong>MVP 里程碑：</strong> 開發將分階段進行，優先交付最簡可行版本（MVP），讓您能儘早看到成果。</li>
+                    <li><strong>內部測試：</strong> 在交付前，我會進行完整的內部測試，確保功能的穩定性。</li>
+                    <li><strong>交付驗收：</strong> 交付資源給您進行測試與驗收，並根據回饋進行調整。</li>
+                    <li><strong>文件與迭代：</strong> 交付最終版本時，會附上必要的文件。後續可討論長期維護或新功能的迭代開發。</li>
+                </ol>
+            </section>
+
+            <section id="projects">
+                <h2>作品案例</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <h3>案例一：伺服器延遲優化</h3>
+                        <p><strong>問題：</strong> 伺服器在線人數超過 80 人時，全體玩家 ping 值飆高，事件處理延遲嚴重。</p>
+                        <p><strong>解法：</strong> 逐一分析高資源佔用腳本，重構了幾個頻繁觸發的 server-side 事件，並將部分邏輯改為 client-side 處理。</p>
+                        <p><strong>結果：</strong> 伺服器在 128 人滿載情況下，resmon 平均值從 0.8ms 降至 0.3ms，事件延遲感明顯消失。</p>
+                        <span class="tag">性能</span> <span class="tag">QBCore</span>
+                    </div>
+                    <div class="project-card">
+                        <h3>案例二：客製化車輛 HUD</h3>
+                        <p><strong>問題：</strong> 客戶需要一個與其伺服器風格一致，且功能簡潔的車輛儀表板 UI。</p>
+                        <p><strong>解法：</strong> 使用 ox_lib 作為基礎，設計並開發了一個新的 NUI 介面，僅顯示速度、油量和引擎狀態，並加入微動畫效果。</p>
+                        <p><strong>結果：</strong> 交付了一個低資源佔用 (0.01ms) 且視覺風格統一的 HUD，並提供配置文件讓客戶自行調整顏色。</p>
+                        <span class="tag">UI</span> <span class="tag">ox_lib</span>
+                    </div>
+                    <div class="project-card">
+                        <h3>案例三：Discord 玩家數據同步</h3>
+                        <p><strong>問題：</strong> 管理員希望在 Discord 中能快速查詢玩家的遊戲內資產。</p>
+                        <p><strong>解法：</strong> 開發了一個 Lua 腳本，監聽玩家數據變化，並透過 Webhook 將加密後的數據發送到一個自製的 Discord Bot。</p>
+                        <p><strong>結果：</strong> 管理員可透過簡單的 Discord 指令，即時查詢玩家的銀行餘額、車輛等資訊，大幅提升管理效率。</p>
+                        <span class="tag">API</span> <span class="tag">Webhook</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="testimonials">
+                <h2>客戶回饋</h2>
+                <blockquote>
+                    <p>「溝通效率極高，問題描述清楚後很快就找到癥結點，一天內就解決了困擾我們一個月的 Bug。」</p>
+                    <cite>– A 伺服器主</cite>
+                </blockquote>
+                <blockquote>
+                    <p>「交付的程式碼品質很好，註解完整，後續我們自己要微調也很方便。非常專業！」</p>
+                    <cite>– B 專案開發者</cite>
+                </blockquote>
+            </section>
+
+            <section id="faq">
+                <h2>常見問題</h2>
+                <details>
+                    <summary>開發一個功能大概需要多久？</summary>
+                    <p>時程取決於功能的複雜度。一個簡單的 UI 介面可能需要 3-5 個工作天，而一個複雜的系統（如自訂義職業）可能需要 2-3 週。我會在需求澄清階段提供詳細的時程估算。</p>
+                </details>
+                <details>
+                    <summary>我可以要求修改幾次？</summary>
+                    <p>在開發過程中，每個里程碑交付後，會提供 1-2 次的微調機會。若有重大變更，則需重新評估時程與費用。</p>
+                </details>
+                <details>
+                    <summary>交付後有保固嗎？</summary>
+                    <p>交付後提供為期 14 天的保固期，期間內若因我方程式碼造成的 Bug，將免費修復。但不包含因伺服器環境變更或與其他資源衝突造成的問題。</p>
+                </details>
+                <details>
+                    <summary>會提供原始碼嗎？</summary>
+                    <p>是的，所有客製化開發的專案，在結案後都會交付完整的、無加密的原始碼。</p>
+                </details>
+            </section>
+
+            <section id="contact">
+                <h2>聯絡我</h2>
+                <p>準備好將您的想法付諸實現了嗎？或是有棘手的 Bug 需要處理？</p>
+                <p>請透過以下方式聯繫我，並盡可能詳細地描述您的需求。我通常會在 24 小時內回覆。</p>
+                <form>
+                    <input type="text" name="name" placeholder="你的名字或暱稱" required>
+                    <input type="email" name="email" placeholder="你的 Email" required>
+                    <textarea name="message" placeholder="請描述你的需求..." rows="5" required></textarea>
+                    <button type="submit" class="cta-primary">發送訊息</button>
+                </form>
+                <p>或直接聯繫我的 Discord: <strong>vex49100</strong></p>
+                <p>Vex Studio DC: <a href="https://discord.gg/SMSJc6XKK7" target="_blank">https://discord.gg/SMSJc6XKK7</a></p>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Vex Studio. All Rights Reserved.</p>
+            <a href="#hero" class="back-to-top">回到頂部</a>
+        </footer>
+
+        <script src="assets/main.js"></script>
+    </body>
+</html>
