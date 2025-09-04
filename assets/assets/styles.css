@@ -1,0 +1,211 @@
+/* --- General Styles --- */
+:root {
+    --bg-color: #121212;
+    --surface-color: #1e1e1e;
+    --primary-color: #03dac6;
+    --text-high: rgba(255, 255, 255, 0.87);
+    --text-medium: rgba(255, 255, 255, 0.6);
+    --text-disabled: rgba(255, 255, 255, 0.38);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-medium);
+    font-family: 'system-ui', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: var(--text-high);
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+section {
+    padding: 4rem 2rem;
+    max-width: 960px;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--surface-color);
+}
+
+/* --- Header --- */
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: rgba(18, 18, 18, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    display: flex;
+    justify-content: center; /* Center the nav */
+    align-items: center;
+    padding: 0.5rem 2rem;
+}
+
+.logo-link {
+    position: absolute;
+    left: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.logo {
+    height: 40px; /* Adjust size as needed */
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 1rem 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+/* --- Hero Section --- */
+#hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+.cta-primary, .cta-secondary {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    margin: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.cta-primary {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}
+
+.cta-secondary {
+    border: 1px solid var(--primary-color);
+}
+
+/* --- Service Grid --- */
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.service-item {
+    background: var(--surface-color);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+/* --- Project Grid --- */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: var(--surface-color);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.tag {
+    background: var(--primary-color);
+    color: var(--bg-color);
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+}
+
+/* --- FAQ --- */
+details {
+    background: var(--surface-color);
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--text-high);
+}
+
+/* --- Contact Form --- */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input, textarea {
+    background: var(--surface-color);
+    border: 1px solid var(--text-disabled);
+    padding: 1rem;
+    border-radius: 5px;
+    color: var(--text-high);
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 2rem;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--primary-color);
+    color: var(--bg-color);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    display: none; /* Hidden by default */
+}
+
+/* --- Animations --- */
+@media (prefers-reduced-motion: no-preference) {
+    section {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    section.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    header {
+        justify-content: space-between;
+    }
+    header nav {
+        display: none; /* Further simplification for mobile, could be a burger menu */
+    }
+
+    section {
+        padding: 2rem 1rem;
+    }
+
+    .service-grid, .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
